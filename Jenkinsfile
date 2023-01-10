@@ -10,6 +10,7 @@ pipeline {
     stage('Open Docker') {
       steps {
         sh 'open -a Docker'
+        sh 'sleep 10'
       }
     }
     stage('Build') {
