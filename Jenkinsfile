@@ -7,6 +7,11 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('jasonbitheads-dockerhub')
   }
   stages {
+    stage('Open Docker') {
+      steps {
+        sh 'open -a Docker'
+      }
+    }
     stage('Build') {
       steps {
         sh 'docker build -t jasonbitheads/dp-alpine:latest .'
