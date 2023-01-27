@@ -11,7 +11,7 @@ pipeline {
       steps {
         // sh 'open -a Docker'
         // sh 'sleep 10'
-        sh 'starting with open docker...'
+        sh 'echo "starting with open docker..."'
       }
     }
     stage('Build') {
