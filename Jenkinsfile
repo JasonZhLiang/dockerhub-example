@@ -9,8 +9,9 @@ pipeline {
   stages {
     stage('Open Docker') {
       steps {
-        sh 'open -a Docker'
-        sh 'sleep 10'
+        // sh 'open -a Docker'
+        // sh 'sleep 10'
+        sh 'starting with open docker...'
       }
     }
     stage('Build') {
