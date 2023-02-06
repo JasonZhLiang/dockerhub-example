@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'docker build -t jasonbitheads/dp-alpine:latest .'
+        sh 'docker build -t jasonbitheads/alpine:latest .'
       }
     }
     stage('Login') {
@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push jasonbitheads/dp-alpine:latest'
+        sh 'docker push jasonbitheads/alpine:latest'
       }
     }
   }
